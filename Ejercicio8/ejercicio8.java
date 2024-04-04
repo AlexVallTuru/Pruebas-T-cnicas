@@ -7,33 +7,22 @@ import java.util.Scanner;
 public class ejercicio8 {
 
     public static void main(String[] arg) {
-        Map<String, Integer> numerosRumanos = new HashMap<String, Integer>();
 
-        numerosRumanos.put("M", 1000);
-        numerosRumanos.put("CM", 900);
-        numerosRumanos.put("D", 500);
-        numerosRumanos.put("CD", 400);
-        numerosRumanos.put("C", 100);
-        numerosRumanos.put("XC", 90);
-        numerosRumanos.put("L", 50);
-        numerosRumanos.put("XL", 40);
-        numerosRumanos.put("X", 10);
-        numerosRumanos.put("IX", 9);
-        numerosRumanos.put("V", 5);
-        numerosRumanos.put("IV", 4);
-        numerosRumanos.put("I", 1);
+        String[] simbolosRomanos = { "M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I" };
+        int[] valoresDecimales = { 1000, 900, 500, 400, 100, 90, 50, 40, 10, 5, 4, 1 };
 
         Scanner in = new Scanner(System.in);
-
         System.out.println("Introduce un numero a que quieras transformar en numeros romanos:");
 
-        try {
+        int numero = Integer.parseInt(in.nextLine());
+        String resultadoFinal = "";
 
-            int numeroDecimal = in.nextInt();
-
-        } catch (Exception e) {
-            System.out.println("Por favor introduce un número únicamente...");
+        for (int i = 0; i < valoresDecimales.length; i++) {
+            while (numero >= valoresDecimales[i]) {
+                resultadoFinal += simbolosRomanos[i];
+                numero -= valoresDecimales[i];
+            }
         }
-
+        System.out.print(resultadoFinal);
     }
 }
