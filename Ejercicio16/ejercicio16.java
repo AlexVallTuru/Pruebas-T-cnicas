@@ -1,39 +1,37 @@
-import java.util.Arrays;
-
 public class ejercicio16 {
-    
-    private static final String ArrayList = null;
 
     public static void main(String[] args) {
 
-        String fraseImprimir  = "Hola soy Àlex Vall WEB";
+        String fraseImprimir = "Hola soy Alex Vall WEB";
 
         String[] fraseImprimirLista = fraseImprimir.split(" ");
-        
-        System.out.print("********");
-        
-        int longitudMaximaFrase = 0;
 
+        int longitudMaximaFrase = calcularPalabraMasLargar(fraseImprimirLista);
+
+        System.out.print("*".repeat(longitudMaximaFrase+4) );
+        for (String frase : fraseImprimirLista) {
+            int cantidadEspacios = calcularCantidadEspacios(frase, longitudMaximaFrase);
+            System.out.print("\n* " + frase + " ".repeat(cantidadEspacios) + " *");
+        }
+        System.out.print("\n" + "*".repeat(longitudMaximaFrase+4) );
+    }
+
+    public static int calcularPalabraMasLargar(String[] fraseImprimirLista){
+
+        int longitudMaximaFrase = 0;
         for(String frase:fraseImprimirLista) {
             if (frase.length() > longitudMaximaFrase) {
                 longitudMaximaFrase = frase.length();        
             }                
         }
-        for(String frase:fraseImprimirLista){
+        return longitudMaximaFrase;
+    }
 
-            if (frase.length() != longitudMaximaFrase ) {
-                int cantidadEspacios = longitudMaximaFrase - frase.length();
-                System.out.print("\n* " + frase + " ".repeat(cantidadEspacios -1)  +" *");
-            }
-            else
-            {
-                System.out.print("\n* " + frase + " *");
-            }
+    public static int calcularCantidadEspacios(String frase, int longitudMaximaFrase) {
 
-        }
-
-        System.out.print("\n********");
-
+        int cantidadEspacios = 0;
+        cantidadEspacios = longitudMaximaFrase - frase.length();
+        return cantidadEspacios;
     }
 
 }
