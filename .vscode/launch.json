@@ -1,0 +1,202 @@
+{
+    // Use IntelliSense para saber los atributos posibles.
+    // Mantenga el puntero para ver las descripciones de los existentes atributos.
+    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Java",
+            "type": "java",
+            "request": "launch",
+            "stopOnEntry": true,
+            "jdkPath": "${env:JAVA_HOME}/bin",
+            "cwd": "${fileDirname}",
+            "startupClass": "${fileBasenameNoExtension}",
+            "classpath": [
+                ".",
+                "${fileDirname}"
+            ]
+        },
+        {
+            "name": "Java Console App",
+            "type": "java",
+            "request": "launch",
+            "stopOnEntry": true,
+            "jdkPath": "${env:JAVA_HOME}/bin",
+            "cwd": "${fileDirname}",
+            "startupClass": "${fileBasenameNoExtension}",
+            "classpath": [
+                ".",
+                "${fileDirname}"
+            ],
+            "externalConsole": true
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicio1",
+            "request": "launch",
+            "mainClass": "Ejercicio1.Ejercicio1",
+            "projectName": "Ejercicios Tecnicos_829750ec"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicio11",
+            "request": "launch",
+            "mainClass": "Ejercicio11",
+            "projectName": "Ejercicios Tecnicos_829750ec"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicio12",
+            "request": "launch",
+            "mainClass": "Ejercicio12",
+            "projectName": "Ejercicios Tecnicos_829750ec"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicio13",
+            "request": "launch",
+            "mainClass": "Ejercicio13",
+            "projectName": "Ejercicios Tecnicos_829750ec"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicio14",
+            "request": "launch",
+            "mainClass": "Ejercicio14",
+            "projectName": "Ejercicios Tecnicos_829750ec"
+        },
+        {
+            "type": "java",
+            "name": "ejercicio16",
+            "request": "launch",
+            "mainClass": "Ejercicio16.ejercicio16",
+            "projectName": "Ejercicios Tecnicos_829750ec"
+        },
+        {
+            "type": "java",
+            "name": "ejercicio19",
+            "request": "launch",
+            "mainClass": "Ejercicio19.ejercicio19",
+            "projectName": "Ejercicios Tecnicos_829750ec"
+        },
+        {
+            "type": "java",
+            "name": "ejercicio20",
+            "request": "launch",
+            "mainClass": "Ejercicio20.src.ejercicio20",
+            "projectName": "Ejercicios Tecnicos_829750ec"
+        },
+        {
+            "type": "java",
+            "name": "ejercicio21",
+            "request": "launch",
+            "mainClass": "Ejercicio21.ejercicio21",
+            "projectName": "Ejercicios Tecnicos_829750ec"
+        },
+        {
+            "type": "java",
+            "name": "ejercicio22",
+            "request": "launch",
+            "mainClass": "Ejercicio22.ejercicio22",
+            "projectName": "Ejercicios Tecnicos_829750ec"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicio4",
+            "request": "launch",
+            "mainClass": "Ejercicio4",
+            "projectName": "Ejercicios Tecnicos_829750ec"
+        },
+        {
+            "type": "java",
+            "name": "ejercicio6",
+            "request": "launch",
+            "mainClass": "Ejercicio6.ejercicio6",
+            "projectName": "Ejercicios Tecnicos_829750ec"
+        },
+        {
+            "type": "java",
+            "name": "ejercicio8",
+            "request": "launch",
+            "mainClass": "Ejercicio8.ejercicio8",
+            "projectName": "Ejercicios Tecnicos_829750ec"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicio9",
+            "request": "launch",
+            "mainClass": "Ejercicio9",
+            "projectName": "Ejercicios Tecnicos_829750ec"
+        },
+        {
+            "type": "java",
+            "name": "ejercicio10",
+            "request": "launch",
+            "mainClass": "ejercicio10",
+            "projectName": "Ejercicios Tecnicos_829750ec"
+        },
+        {
+            "type": "java",
+            "name": "ejercicio15",
+            "request": "launch",
+            "mainClass": "ejercicio15",
+            "projectName": "Ejercicios Tecnicos_829750ec"
+        },
+        {
+            "type": "java",
+            "name": "ejercicio17",
+            "request": "launch",
+            "mainClass": "ejercicio17",
+            "projectName": "Ejercicios Tecnicos_829750ec"
+        },
+        {
+            "type": "java",
+            "name": "ejercicio2",
+            "request": "launch",
+            "mainClass": "ejercicio2",
+            "projectName": "Ejercicios Tecnicos_829750ec"
+        },
+        {
+            "type": "java",
+            "name": "ejercicio3",
+            "request": "launch",
+            "mainClass": "ejercicio3",
+            "projectName": "Ejercicios Tecnicos_829750ec"
+        },
+        {
+            "type": "java",
+            "name": "ejercicio5",
+            "request": "launch",
+            "mainClass": "ejercicio5",
+            "projectName": "Ejercicios Tecnicos_829750ec"
+        },
+        {
+            "type": "java",
+            "name": "ejercicio5Optimizado",
+            "request": "launch",
+            "mainClass": "ejercicio5Optimizado",
+            "projectName": "Ejercicios Tecnicos_829750ec"
+        },
+        {
+            "type": "java",
+            "name": "ejercicio7",
+            "request": "launch",
+            "mainClass": "ejercicio7",
+            "projectName": "Ejercicios Tecnicos_829750ec"
+        },
+        {
+            "type": "java",
+            "name": "ejercicio18",
+            "request": "launch",
+            "mainClass": "src.ejercicio18",
+            "projectName": "Ejercicios Tecnicos_829750ec"
+        }
+    ]
+}
