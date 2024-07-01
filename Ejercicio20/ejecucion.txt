@@ -1,5 +1,0 @@
-Compilar:
-javac -cp lib/json-simple-1.1.1.jar -d bin src/Person.java src/ejercicio20.java
-
-Ejecutar:
-java -cp "lib/json-simple-1.1.1.jar;bin" src.ejercicio20

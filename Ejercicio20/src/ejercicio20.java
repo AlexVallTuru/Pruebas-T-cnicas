@@ -19,7 +19,6 @@ public class ejercicio20 {
         final String edad = "edad";
         final String nombre = "nombre";
         
-
         JSONArray jsonArray = stringToJsonArray("src/persons.json");
         List<Person> listaPersons = jsonToObject(jsonArray);
         listaPersons = ordenacionArray(listaPersons,nombre);
