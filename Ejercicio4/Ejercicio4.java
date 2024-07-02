@@ -47,17 +47,18 @@ public class Ejercicio4 {
 
     public static String destaparDigito(ArrayList<String> palabraPorPartesMostrar, ArrayList<String> palabraPorPartes,
             int vidas) {
-        Scanner in = new Scanner(System.in);
-
-        System.out.println("\nIntroduce un carácter: ");
-        String caracter = in.nextLine();
-        if (palabraPorPartes.contains(caracter)) {
-            for (int i = 0; i < palabraPorPartes.size(); i++) {
-                if (palabraPorPartes.get(i).contains(caracter)) {
-                    palabraPorPartesMostrar.set(i, caracter);
+        try (Scanner in = new Scanner(System.in)) {
+            System.out.println("\nIntroduce un carácter: ");
+            String caracter = in.nextLine();
+            if (palabraPorPartes.contains(caracter)) {
+                for (int i = 0; i < palabraPorPartes.size(); i++) {
+                    if (palabraPorPartes.get(i).contains(caracter)) {
+                        palabraPorPartesMostrar.set(i, caracter);
+                    }
                 }
             }
         }
+
         String nombreCompuesto = "";
         for (String digito : palabraPorPartesMostrar) {
             nombreCompuesto = nombreCompuesto + digito;
