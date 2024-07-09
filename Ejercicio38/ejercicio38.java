@@ -9,7 +9,7 @@ public class ejercicio38 {
 
     public static void main(String[] args) {
         
-        aBinario(11342222222223);
+        aBinario(10);
         
     }
 
