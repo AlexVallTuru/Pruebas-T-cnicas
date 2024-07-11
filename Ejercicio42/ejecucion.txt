@@ -1,0 +1,5 @@
+Compilar:
+javac -cp lib/json-simple-1.1.1.jar -d bin src/Superheroes.java src/ejercicio42.java
+
+Ejecutar:
+java -cp "lib/json-simple-1.1.1.jar;bin" src.ejercicio42

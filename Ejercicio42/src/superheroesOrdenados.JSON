@@ -1,0 +1,92 @@
+{
+    "Thor": {
+        "afiliacion": "Marvel Comics",
+        "listapoderes": [
+            "martillo mágico",
+            "vuelo",
+            "trovador"
+        ],
+        "nombreReal": "Thor Odinson"
+    },
+    "Superman": {
+        "afiliacion": "DC Comics",
+        "listapoderes": [
+            "vuelo",
+            "super fuerza",
+            "super velocidad",
+            "rayos x"
+        ],
+        "nombreReal": "Clark Kent"
+    },
+    "Iron Man": {
+        "afiliacion": "Marvel Comics",
+        "listapoderes": [
+            "armadura de hierro",
+            "inteligencia",
+            "ricos recursos"
+        ],
+        "nombreReal": "Tony Stark"
+    },
+    "Spider-Man": {
+        "afiliacion": "Marvel Comics",
+        "listapoderes": [
+            "telarañas",
+            "agilidad",
+            "sensores arácnidos"
+        ],
+        "nombreReal": "Peter Parker"
+    },
+    "Captain America": {
+        "afiliacion": "Marvel Comics",
+        "listapoderes": [
+            "super fuerza",
+            "agilidad",
+            "resistencia sobrenatural",
+            "escudo indestructible"
+        ],
+        "nombreReal": "Steve Rogers"
+    },
+    "Wonder Woman": {
+        "afiliacion": "DC Comics",
+        "listapoderes": [
+            "super fuerza",
+            "vuelo",
+            "resistencia sobrenatural"
+        ],
+        "nombreReal": "Diana Prince"
+    },
+    "Batman": {
+        "afiliacion": "DC Comics",
+        "listapoderes": [
+            "inteligencia",
+            "habilidades físicas sobresalientes",
+            "ricos recursos"
+        ],
+        "nombreReal": "Bruce Wayne"
+    },
+    "The Flash": {
+        "afiliacion": "DC Comics",
+        "listapoderes": [
+            "super velocidad",
+            "manipulación del tiempo"
+        ],
+        "nombreReal": "Barry Allen"
+    },
+    "Hulk": {
+        "afiliacion": "Marvel Comics",
+        "listapoderes": [
+            "super fuerza",
+            "resistencia sobrenatural",
+            "transformación en Hulk"
+        ],
+        "nombreReal": "Bruce Banner"
+    },
+    "Green Lantern": {
+        "afiliacion": "DC Comics",
+        "listapoderes": [
+            "anillo mágico",
+            "manipulación de la energía"
+        ],
+        "nombreReal": "Hal Jordan"
+    }
+}
