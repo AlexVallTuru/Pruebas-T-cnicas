@@ -19,12 +19,9 @@ public class ejercicio51 {
             } else {
                 cantidadEspacios = (tamanio - 1) / 2;
             }
-            espaciosParteSuperior(cantidadEspacios);
-
-            // MEDIO
-            System.out.println("Estamos al medio");
-            // PARTE INFERIOR
-            espaciosParteInferior(cantidadEspacios);
+            espaciosEstrellasParteSuperior(cantidadEspacios);
+            estrellasParteCentral(tamanio);          
+            espaciosEstrellasParteInferior(cantidadEspacios);
 
         } else {
             System.out.println("No se puede crear un diamante con longitud de 2 o inferior....");
@@ -32,24 +29,37 @@ public class ejercicio51 {
 
     }
 
-    public static void espaciosParteSuperior(int cantidadEspacios) {
-        StringBuilder espacios = new StringBuilder();
-        // PARTE SUPERIOR
+    public static void espaciosEstrellasParteSuperior(int cantidadEspacios) {
+        StringBuilder espaciosEstrellas = new StringBuilder();
+        int contadorEstrellas = 0;
         for (int i = cantidadEspacios; i > 0; i--) {
             for (int j = 0; j < i; j++) {
-                espacios.append("-");
+                espaciosEstrellas.append("-");
             }
-            System.out.print(espacios + "\n");
-            espacios.setLength(0);
+            contadorEstrellas = contadorEstrellasImpares(contadorEstrellas);
+            for (int j = 0; j < contadorEstrellas; j++) {
+                espaciosEstrellas.append("*");
+            }
+            System.out.print(espaciosEstrellas + "\n");
+            espaciosEstrellas.setLength(0);
         }
     }
 
-    public static void espaciosParteInferior(int cantidadEspacios) {
-        StringBuilder espacios = new StringBuilder();
+    public static void espaciosEstrellasParteInferior(int cantidadEspacios) {
+        StringBuilder espaciosEstrellas = new StringBuilder();
         for (int l = 0; l < cantidadEspacios; l++) {
-            espacios.append("-");
-            System.out.print(espacios + "\n");
+            
+            espaciosEstrellas.append("-");
+            System.out.print(espaciosEstrellas + "\n");
         }
+    }
+
+    public static void estrellasParteCentral(int tamanio){
+        StringBuilder estrellas = new StringBuilder();
+        for(int i = 0; i < tamanio; i++){
+            estrellas.append("*");
+        }
+        System.out.println(estrellas);
     }
 
     public static String parImpar(int tamanio) {
@@ -62,4 +72,13 @@ public class ejercicio51 {
 
     }
 
+    public static int contadorEstrellasImpares(int estrellas){
+        int contEstellas = estrellas;
+        if (estrellas == 0) {
+            return 1;
+        } else if(estrellas % 2 != 0){
+            return contEstellas + 2;
+        }
+        return contEstellas;
+    }
 }
