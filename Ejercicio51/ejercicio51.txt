@@ -11,7 +11,7 @@ Enunciado Ejercicio 51:
 Crea una función que dibuje un diamante de asteriscos.
  
 Ejemplos:
-generarDiamante(7);
+generarDiamante(5);
  
 Devuelve: 
   *
@@ -20,13 +20,6 @@ Devuelve:
  *** 
   * 
 
-   *
-  ***
- *****
-*******
- *****
-  ***
-   *
    
    */
  

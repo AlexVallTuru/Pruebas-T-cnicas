@@ -4,7 +4,7 @@ public class ejercicio51 {
 
     public static void main(String[] args) {
 
-        generarDiamante(3);
+        generarDiamante(5);
 
     }
 
